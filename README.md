@@ -70,14 +70,33 @@ Do not blindly run these commands. The main problem with older distributions is 
 
 ```
 apt install git cmake make build-essential zlib1g-dev
-apt install liblua5.1-0-dev #Lua support
+```
+```
+apt install liblua5.1-0-dev
+```
+```
 apt install mysql-server mysql-client libmysqlclient-dev #MySQL support
+```
+```
 cd /home
+```
+```
 git clone https://github.com/pvpgn/pvpgn-server.git
+```
+```
+cd pvpgn-server
+```
+```
 mkdir build
+```
+```
+cd build
+```
+```
 cmake -D CMAKE_INSTALL_PREFIX=/usr/local/pvpgn -D WITH_MYSQL=true -D WITH_LUA=true ../
-make
-make install
+```
+```
+make && make install
 ```
 
 #### Ubuntu 16.04, 18.04
